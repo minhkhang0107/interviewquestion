@@ -24,6 +24,11 @@
 | **15** | [**Framework: Power, Media, TV**](15_Framework_Power_Media_TV.md) | Standby/suspend, HDMI-CEC, Audio/Codec2/tunnel, TIF, Alarm/Job, multi-user, CE/DE |
 | **16** | [**Thảo luận với Gemini**](16_Gemini_discussion.md) | Ai đúng ai sai, bằng chứng trong source, lỗi đã sửa |
 | **17** | [**Kotlin & Android hiện đại**](17_Kotlin_Android_hien_dai.md) | Từ ghi chú cá nhân (đã sửa chỗ sai): Kotlin core, generics, inline/reified, coroutines/Flow, Service/IPC, kiến trúc & design pattern; mới tới 11/2026: Kotlin 2.x/K2, Compose, Android 15/16 |
+| **18** | [**DRM & Widevine**](18_DRM_Widevine.md) | MediaDrm/MediaCrypto, L1/L3, provisioning/keybox, secure video path, HDCP, AIDL DRM HAL, CAS, debug "chỉ phát SD" |
+| **19** | [**OTA: A/B, Virtual A/B**](19_OTA_Update.md) | ota_from_target_files, payload.bin, update_engine, boot_control, rollback/anti-rollback, snapuserd/merge, thiết kế OTA cho 1 triệu box |
+| **20** | [**Concurrency & Deadlock**](20_Concurrency_Deadlock.md) | Lock order, deadlock system_server, binder re-entrancy/thread pool, Watchdog, đọc trace, HAL C++, coroutines |
+| **21** | [**ART & Garbage Collector**](21_ART_Garbage_Collector.md) | CMS → CC → generational → CMC, heap spaces, read barrier, log GC, heap props, OOM, reference types, công cụ memory |
+| **22** | [**Service & System Service (đi sâu)**](22_Service_va_System_Service.md) | 5 loại "service", bindService end-to-end, BIND_*, restart, FGS A8→A15, threading, RemoteCallbackList, bảo mật, OEM SDK, native service |
 | — | [`gemini_raw/`](gemini_raw/) | Bản gốc output của Gemini (chưa sửa; đọc kèm chương 16) |
 
 > Ký hiệu **⚠️ Đã sửa** trong chương 11–15 đánh dấu chỗ Gemini viết sai; **⚠️ Sửa ghi chú** trong chương 17 đánh dấu chỗ ghi chú cá nhân cũ sai/lỗi thời.
@@ -38,7 +43,8 @@
 5. **Ngày 5**: Chương 15 + 04 + 06: binder, system service, power/CEC/media/TIF.
 6. **Ngày 6**: Chương 01–03, 05, 07, 09: boot, build, HAL, SELinux, case study DavidDeviceControl.
 7. **Ngày 7**: Chương 08 + 10 + 16: debug, mock interview, rà lại các "bẫy" đã được kiểm chứng.
-8. **Xen kẽ mỗi ngày 30 phút**: Chương 17 (Kotlin): rapid-fire 17.7 và các mục **⚠️ Sửa ghi chú**.
+8. **Ngày 8 (bổ sung)**: Chương 18–22: DRM/Widevine, OTA, deadlock, GC, service đi sâu — ưu tiên 18 và 20 nếu ứng tuyển STB.
+9. **Xen kẽ mỗi ngày 30 phút**: Chương 17 (Kotlin): rapid-fire 17.7 và các mục **⚠️ Sửa ghi chú**.
 
 ## Cách trả lời phỏng vấn senior (công thức)
 

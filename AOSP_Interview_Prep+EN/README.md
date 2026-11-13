@@ -25,6 +25,11 @@
 | **15** | [**Framework: Power, Media, TV**](15_Framework_Power_Media_TV.md) | Standby/suspend, HDMI-CEC, Audio/Codec2/tunnel, TIF, Alarm/Job, multi-user, CE/DE |
 | **16** | [**Discussion with Gemini**](16_Gemini_discussion.md) | Who was right/wrong, evidence in the source, fixed errors |
 | **17** | [**Kotlin & Modern Android**](17_Kotlin_Modern_Android.md) | From personal notes (errors fixed): Kotlin core, generics, inline/reified, coroutines/Flow, Service/IPC, architecture & design patterns; new up to 11/2026: Kotlin 2.x/K2, Compose, Android 15/16 |
+| **18** | [**DRM & Widevine**](18_DRM_Widevine.md) | MediaDrm/MediaCrypto, L1/L3, provisioning/keybox, secure video path, HDCP, AIDL DRM HAL, CAS, debugging "SD only" |
+| **19** | [**OTA: A/B, Virtual A/B**](19_OTA_Update.md) | ota_from_target_files, payload.bin, update_engine, boot_control, rollback/anti-rollback, snapuserd/merge, OTA design for 1M boxes |
+| **20** | [**Concurrency & Deadlock**](20_Concurrency_Deadlock.md) | Lock order, system_server deadlocks, binder re-entrancy/thread pool, Watchdog, reading traces, C++ HALs, coroutines |
+| **21** | [**ART & Garbage Collector**](21_ART_Garbage_Collector.md) | CMS → CC → generational → CMC, heap spaces, read barrier, GC logs, heap props, OOM, reference types, memory tools |
+| **22** | [**App Services & System Services (deep dive)**](22_Service_and_System_Service.md) | 5 kinds of "service", bindService end-to-end, BIND_*, restarts, FGS A8→A15, threading, RemoteCallbackList, security, OEM SDK, native services |
 | — | [`gemini_raw/`](gemini_raw/) | Gemini's original output (uncorrected; read together with chapter 16) — machine-translated by Gemini |
 
 > The **⚠️ Corrected** marker in chapters 11–15 flags places where Gemini was wrong; **⚠️ Notes fix** in chapter 17 flags places where the old personal notes were wrong/outdated.
@@ -38,7 +43,8 @@
 5. **Day 5**: Chapters 15 + 04 + 06: binder, system services, power/CEC/media/TIF.
 6. **Day 6**: Chapters 01–03, 05, 07, 09: boot, build, HAL, SELinux, the DavidDeviceControl case study.
 7. **Day 7**: Chapters 08 + 10 + 16: debugging, mock interview, review the verified "traps".
-8. **30 minutes every day**: Chapter 17 (Kotlin): the 17.7 rapid-fire and the **⚠️ Notes fix** items.
+8. **Day 8 (added)**: Chapters 18–22: DRM/Widevine, OTA, deadlock, GC, services deep dive — prioritize 18 and 20 for STB roles.
+9. **30 minutes every day**: Chapter 17 (Kotlin): the 17.7 rapid-fire and the **⚠️ Notes fix** items.
 
 ## How to answer as a senior (formula)
 
